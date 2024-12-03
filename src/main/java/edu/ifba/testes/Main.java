@@ -16,6 +16,7 @@ public class Main {
         ebook.setValor(100);
         ebook.setUrlMarcaDagua("https://ofuxico.com.br/wp-content/uploads/2024/07/Aya-Nakamura.jpg");
         ebook.setIsbn("10212451135135-6553");
+        ebook.aplicarDesconto(0.1);
 
         Livro livro = new Livro();
         livro.setId(1);
@@ -23,6 +24,7 @@ public class Main {
         livro.setValor(150);
         livro.setTiragem(200);
         livro.setIsbn("3211325 - 13232");
+        livro.aplicarDesconto(0.5);
 
         Item item1 = new Item();
         item1.setObra(livro);
@@ -46,7 +48,6 @@ public class Main {
             System.out.println("Valor: "+item.getObra().getValor());
             System.out.println("Quantidade: "+item.getQuantidade());
             System.out.println("===================");
-        }
-        
+        }  
     }
 }
