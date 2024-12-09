@@ -1,5 +1,7 @@
 package edu.ifba.abstracao_exemplo2;
 
-public class animal {
+public abstract class Animal {
     
+    public abstract void emitirSom();
+
 }
